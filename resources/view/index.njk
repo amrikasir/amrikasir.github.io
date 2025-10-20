@@ -1,0 +1,109 @@
+---
+title: "Al Amrikasir — Portfolio"
+---
+
+<!doctype html>
+<html lang="id">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>{{ title }}</title>
+	<meta name="description" content="Portfolio Amrikasir — web developer, gamer, biker." />
+	<link rel="icon" href="/assets/favicon.ico" />
+	<!-- Ganti atau hapus jika tidak pakai Tailwind -->
+	<link rel="stylesheet" href="/assets/index.css" />
+</head>
+<body class="antialiased bg-gray-50 text-gray-900">
+	<header class="max-w-4xl mx-auto px-6 py-8">
+		<nav class="flex items-center justify-between">
+			<a href="/" class="text-xl font-semibold">Hello World</a>
+			<ul class="flex gap-4 text-sm">
+				<li><a href="#about" class="hover:underline">Tentang</a></li>
+				<li><a href="#skills" class="hover:underline">Skill</a></li>
+				<li><a href="#projects" class="hover:underline">Project</a></li>
+				<li><a href="#contact" class="hover:underline">Kontak</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="max-w-4xl mx-auto px-6">
+		<section id="hero" class="py-12">
+			<h1 class="text-4xl md:text-5xl font-bold">Halo, saya Al Amrikasir</h1>
+			<p class="mt-4 text-lg text-gray-700">
+				Menyukai dunia komputer dan digital dari tahun 2007, dan menjadi Web Developer dengan fokus pada bahasa program PHP, Saya suka menyelesaikan masalah dengan kode sederhana dan pragmatic.
+			</p>
+			<p class="mt-4 text-sm text-gray-600">Lokasi: Padang, Indonesia</p>
+		</section>
+
+		<section id="about" class="py-8 border-t border-gray-200">
+			<h2 class="text-2xl font-semibold">Tentang</h2>
+			<p class="mt-3 text-gray-700">
+				Dari 2016 menjadi Web Developer, saya bekerja sembari kuliah dan mengerjakan berbagai project web, mulai dari situs web untuk sekolah, pemerintah daerah, hingga aplikasi web untuk internal perusahaan.
+			</p>
+			<ul class="mt-4 space-y-2 text-sm text-gray-700">
+				<li><strong>Fokus:</strong> Back End Developer | Full Stack Web Programmer </li>
+				<li><strong>Pendekatan:</strong> Readable Clean code, SOLID principle</li>
+			</ul>
+		</section>
+
+		<section id="skills" class="py-8 border-t border-gray-200">
+			<h2 class="text-2xl font-semibold">Bahasa & Teknologi</h2>
+			<div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+				<div>
+					<h3 class="font-medium">Bahasa Pemrograman</h3>
+					<ul class="mt-2 text-gray-700">
+						<li>HTML 5 & CSS 3</li>
+						<li>PHP</li>
+						<li>Python</li>
+						<li>Java</li>
+						<li>C++</li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="font-medium">Tools & Frameworks</h3>
+					<ul class="mt-2 text-gray-700">
+						<li>Eleventy (11ty)</li>
+						<li>Tailwind CSS</li>
+						<li>Alpine.js</li>
+						<li>Git, CI/CD</li>
+						<li>Laravel</li>
+						<li>CodeIgniter</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="py-8 border-t border-gray-200">
+			<h2 class="text-2xl font-semibold">Pengalaman Kerja</h2>
+			<p class="mt-2 text-sm text-gray-600">Pengalaman pekerjaan saya selama menjadi web developer — kuliah dan kerja</p>
+
+			<ul class="mt-6 space-y-4">
+				<li class="p-4 bg-white rounded shadow-sm">
+					<h3 class="font-medium">CV. Andalas Lintas Data</h3>
+					<p class="mt-1 text-gray-700 text-sm">Bertanggung jawab untuk membuat aplikasi web-based untuk beberapa instansi pemerintah di kota padang, seperti Aplikasi Pelayanan Satu Pintu, yang digunakan di beberapa kecamatan di kota padang. Termasuk juga aplikasi pencatatan penyakit masyarakat yang digunakan di Satpol-PP kota Padang</p>
+					<p class="mt-2 text-xs text-gray-500">Tech: PHP Codeigniter · Semantic UI · JQuery</p>
+				</li>
+
+				<li class="p-4 bg-white rounded shadow-sm">
+					<h3 class="font-medium">PT. Menara Agung</h3>
+					<p class="mt-1 text-gray-700 text-sm">Bertanggung jawab untuk mengembangkan dan melakukan maintenance aplikasi Dealer Manament System yang digunakan oleh seluruh Dealer Honda milik PT. Menara Agung, yang meliputi setengah Sumatera Barat. Termasuk didalam nya mengembangkan SMS gateway, API Service untuk Mobile Digital Sales Tools dan API Service untuk Virtual Exhibition System</p>
+					<p class="mt-2 text-xs text-gray-500">Tech: PHP Laravel · PHP Lumen · VueJS · JQuery · Semantic UI · Material</p>
+				</li>
+			</ul>
+		</section>
+
+		<section id="contact" class="py-8 border-t border-gray-200">
+			<h2 class="text-2xl font-semibold">Kontak</h2>
+			<p class="mt-3 text-gray-700">Tertarik bekerja sama atau ingin melihat kode? Hubungi saya:</p>
+			<ul class="mt-3 text-sm text-gray-700">
+				<li>Email: <a href="mailto:amrikasir@gmail.com" class="text-blue-600">amrikasir@gmail.com</a></li>
+				<li>GitHub: <a href="https://github.com/amrikasir" class="text-blue-600">github.com/amrikasir</a></li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="max-w-4xl mx-auto px-6 py-8 text-sm text-gray-600 border-t border-gray-200">
+		<p>Amrikasir — Built with Eleventy (11ty) · Tailwind</p>
+	</footer>
+</body>
+</html>
