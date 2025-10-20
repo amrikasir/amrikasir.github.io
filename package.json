@@ -1,0 +1,28 @@
+{
+	"name": "amrikasir-portfolio",
+	"version": "1.0.0",
+	"description": "Static portfolio site built with Eleventy and Tailwind CSS",
+	"author": "Amri Kasir",
+	"license": "MIT",
+	"private": false,
+	"homepage": "https://amrikasir.github.io",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/amrikasir/amrikasir.github.io.git"
+	},
+	"scripts": {
+		"dev:11ty": "eleventy --serve",
+		"build:11ty": "eleventy",
+		"tailinit": "tailwindcss init -p"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@11ty/eleventy": "^3.1.2",
+		"@tailwindcss/postcss": "^4.1.15",
+		"alpinejs": "^3.15.0",
+		"autoprefixer": "^10.4.21",
+		"cssnano": "^7.1.1",
+		"postcss": "^8.5.6",
+		"tailwindcss": "^4.1.15"
+	}
+}
