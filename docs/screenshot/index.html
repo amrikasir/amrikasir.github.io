@@ -1,0 +1,182 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+	<meta charset="utf-8" />
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Galeri — Projects</title>
+	<link rel="stylesheet" href="/assets/index.css" />
+	<style>
+		/* Minimal inline styles as fallback jika Tailwind belum tersedia */
+		.gallery-grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(180px,1fr)); gap:1rem; }
+		.thumb { width:100%; height:140px; object-fit:cover; border-radius:6px; display:block; }
+		.modal { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.7); padding:1rem; z-index:50; }
+		.modal img { max-width:100%; max-height:90vh; border-radius:6px; }
+		.modal .meta { color:#fff; margin-top:.5rem; text-align:center; font-size:.95rem; }
+		.hidden { display:none; }
+
+		/* Nav buttons */
+		.modal .nav-btn {
+			position:absolute;
+			top:50%;
+			transform:translateY(-50%);
+			background:rgba(0,0,0,0.45);
+			border:1px solid rgba(255,255,255,0.1);
+			color:#fff;
+			padding:0.6rem;
+			border-radius:999px;
+			cursor:pointer;
+		}
+		.modal .prev { left:1rem; }
+		.modal .next { right:1rem; }
+	</style>
+</head>
+<body class="antialiased bg-gray-50 text-gray-900">
+	<header class="max-w-4xl mx-auto px-6 py-8">
+	<nav class="flex items-center justify-between">
+		<a href="/" class="text-xl font-semibold">Hello World</a>
+		<ul class="flex gap-4 text-sm">
+			<li><a href="/index.html#home" class="hover:underline">Home</a></li>
+			<li><a href="/index.html#about" class="hover:underline">Tentang</a></li>
+			<li><a href="/index.html#skills" class="hover:underline">Skill</a></li>
+			<li><a href="/index.html#projects" class="hover:underline">Project</a></li>
+			<li><a href="/screenshot">Gallery</a></li>
+			<li><a href="/index.html#contact" class="hover:underline">Kontak</a></li>
+		</ul>
+	</nav>
+</header>
+
+	<main class="max-w-4xl mx-auto px-6 pb-12">
+		<section>
+			<h1 class="text-2xl font-semibold">Galeri</h1>
+			<p class="mt-2 text-gray-700 text-sm">Kumpulan screenshot & hasil kerja. Klik untuk melihat lebih besar.</p>
+
+			
+			<div class="gallery-grid mt-4">
+				
+				<figure>
+					<a href="#" class="open-image" data-src="/assets/img/Screenshot 2025-10-21 at 05-28-44 SiPandu (Sistem Informasi Pelayanan Terpadu).png" data-alt="Halaman Awal Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan" data-caption="">
+						<img src="/assets/img/Screenshot 2025-10-21 at 05-28-44 SiPandu (Sistem Informasi Pelayanan Terpadu).png" alt="Halaman Awal Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan" class="thumb" loading="lazy" />
+					</a>
+					
+				</figure>
+				
+				<figure>
+					<a href="#" class="open-image" data-src="/assets/img/Screenshot 2025-10-21 at 05-29-49 SiPanDu - DPMPTSP Kabupaten Solok Selatan.png" data-alt="Form Registrasi Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan" data-caption="">
+						<img src="/assets/img/Screenshot 2025-10-21 at 05-29-49 SiPanDu - DPMPTSP Kabupaten Solok Selatan.png" alt="Form Registrasi Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan" class="thumb" loading="lazy" />
+					</a>
+					
+				</figure>
+				
+				<figure>
+					<a href="#" class="open-image" data-src="/assets/img/Screenshot 2025-10-21 at 05-30-10 SiPanDu - DPMPTSP Kabupaten Solok Selatan.png" data-alt="Login Screen Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan" data-caption="">
+						<img src="/assets/img/Screenshot 2025-10-21 at 05-30-10 SiPanDu - DPMPTSP Kabupaten Solok Selatan.png" alt="Login Screen Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan" class="thumb" loading="lazy" />
+					</a>
+					
+				</figure>
+				
+				<figure>
+					<a href="#" class="open-image" data-src="/assets/img/Screenshot 2025-10-21 at 07-13-36 SiPanDu - DPMPTSP Kabupaten Solok Selatan.png" data-alt="Login Screen Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan - Dark Mode" data-caption="">
+						<img src="/assets/img/Screenshot 2025-10-21 at 07-13-36 SiPanDu - DPMPTSP Kabupaten Solok Selatan.png" alt="Login Screen Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan - Dark Mode" class="thumb" loading="lazy" />
+					</a>
+					
+				</figure>
+				
+				<figure>
+					<a href="#" class="open-image" data-src="/assets/img/Screenshot 2025-10-21 at 05-34-13 SiPanDu - DPMPTSP Kabupaten Solok Selatan.png" data-alt="Dashboard Admin Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan" data-caption="">
+						<img src="/assets/img/Screenshot 2025-10-21 at 05-34-13 SiPanDu - DPMPTSP Kabupaten Solok Selatan.png" alt="Dashboard Admin Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan" class="thumb" loading="lazy" />
+					</a>
+					
+				</figure>
+				
+				<figure>
+					<a href="#" class="open-image" data-src="/assets/img/Screenshot 2025-10-21 at 05-36-18 Laravel.png" data-alt="Form Input Supplier pada Aplikasi Inventory berbasis Laravel" data-caption="">
+						<img src="/assets/img/Screenshot 2025-10-21 at 05-36-18 Laravel.png" alt="Form Input Supplier pada Aplikasi Inventory berbasis Laravel" class="thumb" loading="lazy" />
+					</a>
+					
+				</figure>
+				
+			</div>
+			
+		</section>
+	</main>
+
+	<!-- Modal -->
+	<div id="galleryModal" class="modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
+		<div id="modalContent" style="max-width:1100px; width:100%; text-align:center; position:relative;">
+			<button id="modalClose" aria-label="Tutup" style="position:absolute; top:1rem; right:1rem; background:none; border:none; color:#fff; font-size:1.4rem;">✕</button>
+
+			<button id="modalPrev" class="nav-btn prev" aria-label="Previous image" title="Previous"> < </button>
+			<button id="modalNext" class="nav-btn next" aria-label="Next image" title="Next"> > </button>
+
+			<img id="modalImage" src="" alt="" />
+			<div id="modalMeta" class="meta"></div>
+		</div>
+	</div>
+
+	<script>
+		// Minimal modal behavior (vanilla JS) with next/prev support
+		(function(){
+			const modal = document.getElementById('galleryModal');
+			const modalImg = document.getElementById('modalImage');
+			const modalMeta = document.getElementById('modalMeta');
+			const closeBtn = document.getElementById('modalClose');
+			const prevBtn = document.getElementById('modalPrev');
+			const nextBtn = document.getElementById('modalNext');
+
+			const links = Array.from(document.querySelectorAll('.open-image'));
+			let currentIndex = -1;
+
+			function showByIndex(i){
+				if (!links.length) return;
+				currentIndex = (i + links.length) % links.length; // wrap
+				const el = links[currentIndex];
+				const src = el.dataset.src || el.getAttribute('href');
+				const alt = el.dataset.alt || '';
+				const caption = el.dataset.caption || '';
+				modalImg.src = src;
+				modalImg.alt = alt;
+				modalMeta.textContent = caption;
+				modal.classList.remove('hidden');
+				modal.setAttribute('aria-hidden','false');
+				// focus for keyboard users
+				closeBtn.focus();
+				document.body.style.overflow = 'hidden';
+			}
+			function close(){
+				modal.classList.add('hidden');
+				modal.setAttribute('aria-hidden','true');
+				modalImg.src = '';
+				modalMeta.textContent = '';
+				currentIndex = -1;
+				document.body.style.overflow = '';
+			}
+			function showNext(){ if (links.length) showByIndex(currentIndex + 1); }
+			function showPrev(){ if (links.length) showByIndex(currentIndex - 1); }
+
+			links.forEach((el, idx) => {
+				el.addEventListener('click', function(e){
+					e.preventDefault();
+					showByIndex(idx);
+				});
+			});
+
+			closeBtn.addEventListener('click', close);
+			nextBtn.addEventListener('click', function(e){ e.stopPropagation(); showNext(); });
+			prevBtn.addEventListener('click', function(e){ e.stopPropagation(); showPrev(); });
+
+			modal.addEventListener('click', function(e){
+				// click outside content closes modal
+				if (e.target === modal) close();
+			});
+			document.addEventListener('keydown', function(e){
+				if (modal.classList.contains('hidden')) return;
+				if (e.key === 'Escape') close();
+				if (e.key === 'ArrowRight') { e.preventDefault(); showNext(); }
+				if (e.key === 'ArrowLeft') { e.preventDefault(); showPrev(); }
+			});
+		})();
+	</script>
+</body>
+</html>
