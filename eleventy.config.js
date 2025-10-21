@@ -4,6 +4,7 @@ import path from 'path';
 import cssnano from 'cssnano';
 import postcss from 'postcss';
 import tailwindcss from '@tailwindcss/postcss';
+import { data } from 'autoprefixer';
 
 export default function (eleventyConfig) {
   //compile tailwind before eleventy processes the files
@@ -12,7 +13,7 @@ export default function (eleventyConfig) {
   eleventyConfig.on('eleventy.before', async () => {
 	const tailwindInputPath = path.resolve('./resources/css/main.css');
 
-	const tailwindOutputPath = './_site/assets/index.css';
+	const tailwindOutputPath = './docs/assets/index.css';
 
 	const cssContent = fs.readFileSync(tailwindInputPath, 'utf8');
 
@@ -39,11 +40,13 @@ export default function (eleventyConfig) {
 	}),
   ]);
 
+  console.log("Eleventy is building the site with Tailwind CSS...");
   return {
 	dir: {
 	  	input: "resources/view", 		// folder sumber halaman
-   		// includes: "../_includes",		// jika lo bikin layout di resources/_includes
-		output: "_site"				// halaman lain masuk pages/
+		data: "../_data",			// folder data
+		includes: "../_includes",		// folder include
+		output: "docs"				// halaman lain masuk pages/
 	},
 	passthroughFileCopy: true
   };
