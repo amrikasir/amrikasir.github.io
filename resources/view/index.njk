@@ -6,6 +6,7 @@ title: "Al Amrikasir — Portfolio"
 <html lang="id">
 <head>
 	<meta charset="utf-8" />
+	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>{{ title }}</title>
 	<meta name="description" content="Portfolio Amrikasir — web developer, gamer, biker." />
@@ -14,20 +15,10 @@ title: "Al Amrikasir — Portfolio"
 	<link rel="stylesheet" href="/assets/index.css" />
 </head>
 <body class="antialiased bg-gray-50 text-gray-900">
-	<header class="max-w-4xl mx-auto px-6 py-8">
-		<nav class="flex items-center justify-between">
-			<a href="/" class="text-xl font-semibold">Hello World</a>
-			<ul class="flex gap-4 text-sm">
-				<li><a href="#about" class="hover:underline">Tentang</a></li>
-				<li><a href="#skills" class="hover:underline">Skill</a></li>
-				<li><a href="#projects" class="hover:underline">Project</a></li>
-				<li><a href="#contact" class="hover:underline">Kontak</a></li>
-			</ul>
-		</nav>
-	</header>
+	{% include "header.njk" %}
 
 	<main class="max-w-4xl mx-auto px-6">
-		<section id="hero" class="py-12">
+		<section id="home" class="py-12">
 			<h1 class="text-4xl md:text-5xl font-bold">Halo, saya Al Amrikasir</h1>
 			<p class="mt-4 text-lg text-gray-700">
 				Menyukai dunia komputer dan digital dari tahun 2007, dan menjadi Web Developer dengan fokus pada bahasa program PHP, Saya suka menyelesaikan masalah dengan kode sederhana dan pragmatic.

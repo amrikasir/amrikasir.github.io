@@ -1,0 +1,38 @@
+[
+	{
+		"title": "Halaman Awal Aplikasi Sipandu",
+		"company": "Diskominfo Kab. Solok Selatan",
+		"src": "/assets/img/Screenshot 2025-10-21 at 05-28-44 SiPandu (Sistem Informasi Pelayanan Terpadu).png",
+		"alt": "Halaman Awal Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan"
+	},
+	{
+		"title": "Form Registrasi Aplikasi Sipandu",
+		"company": "Diskominfo Kab. Solok Selatan",
+		"src": "/assets/img/Screenshot 2025-10-21 at 05-29-49 SiPanDu - DPMPTSP Kabupaten Solok Selatan.png",
+		"alt": "Form Registrasi Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan"
+	},
+	{
+        "title": "Login Screen Aplikasi Sipandu",
+        "company": "Diskominfo Kab. Solok Selatan",
+        "src": "/assets/img/Screenshot 2025-10-21 at 05-30-10 SiPanDu - DPMPTSP Kabupaten Solok Selatan.png",
+        "alt": "Login Screen Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan"
+    },
+	{
+		"title": "Login Screen Aplikasi Sipandu - Dark Mode",
+		"company": "Diskominfo Kab. Solok Selatan",
+		"src": "/assets/img/Screenshot 2025-10-21 at 07-13-36 SiPanDu - DPMPTSP Kabupaten Solok Selatan.png",
+		"alt": "Login Screen Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan - Dark Mode"
+	},
+	{
+		"title": "Dashboard Admin Aplikasi Sipandu",
+		"company": "Diskominfo Kab. Solok Selatan",
+		"src": "/assets/img/Screenshot 2025-10-21 at 05-34-13 SiPanDu - DPMPTSP Kabupaten Solok Selatan.png",
+		"alt": "Dashboard Admin Aplikasi SiPanDu - DPMPTSP Kabupaten Solok Selatan"
+	},
+	{
+		"title": "Form Input Supplier pada Aplikasi Inventory",
+		"company": "freelance",
+		"src": "/assets/img/Screenshot 2025-10-21 at 05-36-18 Laravel.png",
+		"alt": "Form Input Supplier pada Aplikasi Inventory berbasis Laravel"
+	}
+]
